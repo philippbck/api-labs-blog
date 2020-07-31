@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `API-labs.io`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `Philipp Buck`,
+      summary: `sharing technology thoughts`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `Blog with technology stuff`,
+    siteUrl: `https://api-labs.io/`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `philippbck`,
     },
   },
   plugins: [
@@ -60,8 +60,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `API-labs.io`,
+        short_name: `API-labs.io`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
