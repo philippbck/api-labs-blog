@@ -1,23 +1,23 @@
 import Typography from "typography"
-import Wordpress2016 from "typography-theme-wordpress-2016"
 
-Wordpress2016.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
+const typography = new Typography({
+  title: "Minimal",
+  baseFontSize: "16px",
+  baseLineHeight: 1.66,
+  scaleRatio: 3.66,
+  headerFontFamily: ["Bitter", "sans-serif"],
+  bodyFontFamily: ["Open Sans", "sans-serif"],
+  headerWeight: 700,
+  googleFonts: [
+    {
+      name: "Bitter",
+      styles: ["700"]
     },
-  }
-}
-
-delete Wordpress2016.googleFonts
-
-const typography = new Typography(Wordpress2016)
-
-// Hot reload typography in development.
-if (process.env.NODE_ENV !== `production`) {
-  typography.injectStyles()
-}
+    {
+      name: "Open Sans",
+      styles: ["400"]
+    }
+  ]
+})
 
 export default typography
-export const rhythm = typography.rhythm
-export const scale = typography.scale
