@@ -16,7 +16,7 @@ const Post = props => {
           Go back to Blog Overview
         </Link>
         <h1 className={styles.title}>{post.title}</h1>
-        <h4 className={styles.date}>{post.date}</h4>
+        <p className={styles.date}>{post.date}</p>
         <div
           className={styles.content}
           dangerouslySetInnerHTML={{ __html: postNode.html }}
