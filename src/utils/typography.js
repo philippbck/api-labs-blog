@@ -5,12 +5,12 @@ const typography = new Typography({
   baseFontSize: "16px",
   baseLineHeight: 1.66,
   scaleRatio: 3.66,
-  headerFontFamily: ["Bitter", "sans-serif"],
-  bodyFontFamily: ["Open Sans", "sans-serif"],
+  headerFontFamily: ["Montserat", "sans-serif"],
+  bodyFontFamily: ["Montserat", "sans-serif"],
   headerWeight: 700,
   googleFonts: [
     {
-      name: "Bitter",
+      name: "Montserat",
       styles: ["700"]
     },
     {

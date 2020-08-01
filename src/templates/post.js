@@ -13,7 +13,7 @@ const Post = props => {
       <SEO title={`${post.title}`} />
       <article className={styles.blogPost}>
         <Link to="/">
-          Gatsby Starter - Minimal Blog | Get back to the overview
+          Go back to Blog Overview
         </Link>
         <h1 className={styles.title}>{post.title}</h1>
         <h4 className={styles.date}>{post.date}</h4>

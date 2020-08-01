@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Minimal Blog`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `API-labs.io`,
+    description: `Description of the Blog Site`,
+    author: `Philipp Buck`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -48,8 +48,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `API-labs.io`,
+        short_name: `api-labs.io`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
