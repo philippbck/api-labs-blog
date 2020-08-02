@@ -16,7 +16,7 @@ const IndexPage = ({ data }) => (
           Welcome to my Blog! My name is Philipp Buck
         </p>
       </div>
-      {data.allMarkdownRemark.edges.map(post => (
+      {data.allMdx.edges.map(post => (
         <Article
           title={post.node.frontmatter.title}
           date={post.node.frontmatter.date}
@@ -33,7 +33,7 @@ export default IndexPage;
 
 export const IndexQuery = graphql`
   query IndexQuery {
-    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+    allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
       edges {
         node {
           fields {

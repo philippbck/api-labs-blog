@@ -3,7 +3,7 @@ const _ = require('lodash');
 exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions;
   let slug;
-  if (node.internal.type === 'MarkdownRemark') {
+  if (node.internal.type === 'Mdx') {
     if (
       Object.prototype.hasOwnProperty.call(node, 'frontmatter') &&
       Object.prototype.hasOwnProperty.call(node.frontmatter, 'slug')
@@ -34,7 +34,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const { error, result } = await wrapper(
     graphql(`
       {
-        posts: allMarkdownRemark {
+        posts: allMdx {
           edges {
             node {
               fields {

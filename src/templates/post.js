@@ -3,9 +3,10 @@ import { Link, graphql } from 'gatsby';
 import Layout from '../components/layout'
 import styles from './post.module.css';
 import SEO from '../components/seo';
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 const Post = props => {
-  const postNode = props.data.markdownRemark;
+  const postNode = props.data.mdx;
   const post = postNode.frontmatter;
 
   return (
@@ -17,10 +18,7 @@ const Post = props => {
         </Link>
         <h1 className={styles.title}>{post.title}</h1>
         <p className={styles.date}>{post.date}</p>
-        <div
-          className={styles.content}
-          dangerouslySetInnerHTML={{ __html: postNode.html }}
-        />
+        <MDXRenderer className={styles.content}>{postNode.body}</MDXRenderer>
       </article>
     </Layout>
   );
@@ -30,8 +28,8 @@ export default Post;
 
 export const postQuery = graphql`
   query postBySlug($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
+    mdx(fields: { slug: { eq: $slug } }) {
+      body
       frontmatter {
         title
         date(formatString: "DD.MM.YYYY")
