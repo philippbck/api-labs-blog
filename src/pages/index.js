@@ -11,9 +11,9 @@ const IndexPage = ({ data }) => (
     <SEO title="Home" keywords={[`gatsby`, `application`, `react`]} />
     <div className={styles.indexContent}>
       <div className={styles.hero}>
-        <h1>Hi.</h1>
+        <br /><br />
         <p>
-          I´m Philipp Buck
+          Welcome to my Blog! My name is Philipp Buck
         </p>
       </div>
       {data.allMarkdownRemark.edges.map(post => (
