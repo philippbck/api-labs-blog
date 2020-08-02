@@ -10,7 +10,7 @@
 
 An ongoing full-stack blog project with a lot of nice used features
 
-## ✨ Used Features
+## ✨ Already implemented Features
 
 - Fully customizable
 - MDX & Markdown
@@ -18,5 +18,6 @@ An ongoing full-stack blog project with a lot of nice used features
 - Code highlighting with [prism-react-renderer](https://github.com/FormidableLabs/prism-react-renderer)
 - Google Analytics Support
 - SEO
+- ... more is planned
 
 ## 🚧 Site is in Progress 🚧
