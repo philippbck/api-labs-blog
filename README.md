@@ -1,3 +1,5 @@
+![api-labs-logo](src/images/api-labs-logo.png)
+
 # API-labs.io | Blog by Philipp Buck
 
 A full-stack blog with a lot of nice used features
