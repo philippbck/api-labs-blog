@@ -12,7 +12,7 @@
   </a>
 </p>
 
-An ongoing full-stack personal blog project with a lot of nice used features to share my experiences in IT, DevOps and automation topics with the community 🙌
+An ongoing full-stack personal blog project with a lot of nice used features to share my experiences in IT, API´s, DevOps, Development and Automation with the community around the world 🙌
 
 ## ✨ Already implemented Features
 
