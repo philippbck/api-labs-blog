@@ -9,9 +9,7 @@ const Layout = ({ children }) => (
   <>
     <Header></Header>
     <main className="layout">{children}</main>
-    <Footer style={{ textAlign: 'center', padding: '3rem 0' }}>
-      &copy; 2020 by Philipp Buck. All rights reserved.
-    </Footer>
+    <Footer></Footer>
   </>
 );
 
